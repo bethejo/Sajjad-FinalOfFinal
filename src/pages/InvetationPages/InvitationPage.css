@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap");
+
+body {
+  background-color: #ebf4f6;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+.invitation-page {
+  max-width: 1200px;
+
+  width: 100%;
+  margin: 25px;
+  padding: 40px;
+  background-color: #37b7c3;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.invitation-container h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  color: #304463;
+  margin-bottom: 10px;
+}
+
+.invitation-container h2 {
+  font-size: 1.5rem;
+  color: #304463;
+  margin-bottom: 20px;
+}
+
+.diamond-icon img {
+  width: 60px;
+  margin: 20px 0;
+}
+
+.invitation-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.copy strong {
+  margin-right: 10px;
+  color: #333;
+}
+
+.copy span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #337ab7;
+  transition: color 0.3s ease;
+}
+
+.copy span:hover {
+  color: #23527c;
+}
+
+.calendar-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-calendar-button {
+  background-color: #2c8e45;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.google-calendar-button:hover {
+  background-color: #2c8e45;
+  color: #ebf4f6;
+  text-decoration: none;
+}
+
+.price-filter {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-filter select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  appearance: none;
+  background: none;
+}
+
+.price-filter select:focus {
+  border-color: #8e8cff;
+  box-shadow: 0 0 5px rgba(142, 140, 255, 0.5);
+}
+
+.price-filter select:hover {
+  border-color: #8e8cff;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.item {
+  background-color: #088395;
+  color: #ebf4f6;
+  width: 400px;
+  min-height: 350px;
+  margin: 10px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+.item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@keyframes fly {
+  0% {
+    bottom: -200px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
